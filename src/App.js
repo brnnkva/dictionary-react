@@ -16,7 +16,8 @@ export default function App() {
       </main>
       <footer className="App-footer">
         <small>
-        coded by me 
+        coded by {""}
+        <a href="https://github.com/brnnkva/dictionary-react">brnnkva</a> 
         </small>
       </footer>
       </div>
