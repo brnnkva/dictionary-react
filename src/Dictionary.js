@@ -4,8 +4,9 @@ import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary(){
-    let [keyword, setKeyword] = useState("");
+    let [keyword, setKeyword] = useState("sun");
     let [results, setResults] = useState(null);
+    let [loaded, setLoaded] = useState(false);
     
 
     function handleRespose(response){
@@ -13,23 +14,37 @@ export default function Dictionary(){
         // console.log(response.data[0].meanings[0].definitions[0].definition);
     }
 
-    function search(event){
-    event.preventDefault();
-
+    function search(){
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleRespose);
+   }
+
+   function handleSubmit(event){
+     event.preventDefault();
+     search();
    }
 
    function handleKeywordChange(event){
        setKeyword(event.target.value);
    }
 
-    return (
-        <div className="Dictionary">
-            <form onSubmit={search}>
-                <input type="search" onChange={handleKeywordChange} />
-            </form>
-            <Results results={results}/>
-        </div>
-    )
+   function  load(){
+       setLoaded(true);
+       search();
+   }
+
+    if (loaded){
+        return (
+            <div className="Dictionary">
+                <form onSubmit={handleSubmit}>
+                    <input type="search" onChange={handleKeywordChange} />
+                </form>
+                <Results results={results}/>
+            </div>
+        )
+    } else {
+      load();
+      return null;
+    }
+    
 }

@@ -8,7 +8,7 @@ export default function App() {
       <div className="container">
       <header className="App-header">
         <h3>
-          dictionary
+          what word do you want to look up?
         </h3>
       </header>
       <main>
