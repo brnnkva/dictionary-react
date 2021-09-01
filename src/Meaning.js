@@ -11,14 +11,10 @@ return(
           return (
               <div key={index}>
                   <div className="definition">
-                      <p>
                       {definition.definition}
-                      </p>
                   </div>
                   <div className="examples">
-                     <em>
-                      {definition.example}
-                     </em>
+                     {definition.example}
                   </div>
                   <Synonyms synonyms={definition.synonyms} />
             </div>      

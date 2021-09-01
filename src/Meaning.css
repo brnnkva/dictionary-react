@@ -1,3 +1,20 @@
-.Meaning .definition {
-  margin: 15px auto;
+.Meaning {
+  margin-left: 23%;
+}
+.Meaning h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.Meaning .definition,
+.Meaning .examples {
+  font-size: 15px;
+  font-weight: 350;
+  margin-top: 7px;
+  padding-bottom: 3px;
+}
+
+.Meaning .examples {
+  font-style: italic;
 }
