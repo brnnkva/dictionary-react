@@ -37,8 +37,11 @@ export default function Dictionary(){
         return (
             <div className="Dictionary">
                 <form onSubmit={handleSubmit}>
-                    <input type="search" onChange={handleKeywordChange} />
+                    <input type="search" autoFocus="off" onChange={handleKeywordChange} />
                 </form>
+                <div className="hint">
+                 get definitions, synonyms, and examples of usage
+                </div>
                 <Results results={results}/>
             </div>
         )

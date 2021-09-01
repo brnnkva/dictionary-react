@@ -7,8 +7,9 @@ export default function App() {
     <div className="App">
       <div className="container">
       <header className="App-header">
+      <i class="far fa-eye"></i>
         <h3>
-          what word do you want to look up?
+          what <span>word</span> do you want to look up?
         </h3>
       </header>
       <main>
