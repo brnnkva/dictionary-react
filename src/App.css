@@ -23,4 +23,12 @@
 
 .App .App-footer {
   text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.App .App-footer a {
+  text-decoration: none;
+  color: #a12568;
+  font-weight: 500;
 }
