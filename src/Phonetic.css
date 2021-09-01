@@ -1,0 +1,18 @@
+.Phonetic {
+  font-size: 18px;
+}
+
+.Phonetic a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 22px;
+  margin-right: 2px;
+  position: relative;
+  top: 2px;
+}
+
+.Phonetic a:hover {
+  color: #212529;
+  font-size: 23px;
+  transition: all 150ms ease-in-out;
+}
