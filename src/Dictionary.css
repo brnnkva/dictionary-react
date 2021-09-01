@@ -4,6 +4,7 @@
 
 .Dictionary input {
   border: 1px solid #dfdfdf;
+  opacity: 0.8;
   padding: 5px 15px;
   border-radius: 25px;
   font-size: 17px;
