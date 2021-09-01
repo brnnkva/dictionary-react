@@ -9,14 +9,14 @@ export default function Dictionary(){
     let [loaded, setLoaded] = useState(false);
     
 
-    function handleRespose(response){
+    function handleResponse(response){
         setResults(response.data[0]);
         // console.log(response.data[0].meanings[0].definitions[0].definition);
     }
 
     function search(){
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleRespose);
+    axios.get(apiUrl).then(handleResponse);
    }
 
    function handleSubmit(event){

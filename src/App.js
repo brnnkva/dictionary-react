@@ -18,7 +18,7 @@ export default function App() {
       <footer className="App-footer">
         <small>
         coded by {""}
-        <a href="https://github.com/brnnkva/dictionary-react">brnnkva</a> 
+        <a href="https://github.com/brnnkva/dictionary-react" target="_blank" rel="noreferrer">brnnkva</a> 
         </small>
       </footer>
       </div>
