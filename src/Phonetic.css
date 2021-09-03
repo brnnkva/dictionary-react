@@ -3,14 +3,13 @@
 }
 
 .Phonetic a {
-  text-decoration: none;
   color: #212529;
   font-size: 22px;
   margin-right: 5px;
   position: relative;
   top: 2px;
+  text-decoration: none;
 }
-
 .Phonetic a:hover {
   color: #212529;
   font-size: 23px;

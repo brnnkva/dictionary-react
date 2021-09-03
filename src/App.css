@@ -1,20 +1,8 @@
 .App {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
   margin-top: 8%;
   margin-bottom: 5%;
-}
-
-.App-header i {
-  margin: 10px;
-  font-size: 60px;
-}
-
-.App-header h3 {
-  font-size: 25px;
-}
-.App span {
-  color: #a12568;
 }
 
 .App .App-header {
@@ -22,14 +10,27 @@
   text-align: center;
 }
 
+.App .App-header i {
+  margin: 10px;
+  font-size: 60px;
+}
+
+.App .App-header h3 {
+  font-size: 25px;
+}
+
+.App .App-header span {
+  color: #a12568;
+}
+
 .App .App-footer {
-  text-align: center;
   font-size: 15px;
-  margin-top: 10px;
   font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .App .App-footer a {
-  text-decoration: none;
   color: #a12568;
+  text-decoration: none;
 }
